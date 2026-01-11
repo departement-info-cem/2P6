@@ -80,11 +80,8 @@ const sidebars = {
     {
       type: "doc",
       label: "1.1 - Révision, objets et collection 🏁",
-      id: "cours/introduction",
-      
-      customProps: {
-        avancementLabel: "TP1",
-        avancement: 0.1,
+      id: "cours/introduction",      
+      customProps: {       
         calendrier: {
           "David": [{"1090":"2025-08-25"}, {"1100":"2025-08-25"}],
           "Éric": [{"1050":"2025-08-22"}, {"1060":"2025-08-22"}],
@@ -102,6 +99,8 @@ const sidebars = {
       label: "1.2 - Git et TP1 (Partie 1)",
       id: "cours/variables",
       customProps: {
+         avancementLabel: "TP1",
+        avancement: 0.1,
         calendrier: {
           "David": [{"1090":"2025-08-28"}, {"1100":"2025-08-28"}],
           "Éric": [{"1050":"2025-08-27"}, {"1060":"2025-08-27"}],

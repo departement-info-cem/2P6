@@ -1,5 +1,5 @@
 ---
-description: Variables, chaînes de caractères, opérations et debugger
+description: Pondération 10%
 ---
 
 # Variables, chaînes et opérations arithmétiques
