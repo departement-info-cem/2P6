@@ -206,7 +206,7 @@ const sidebars = {
     {
       type: "doc",
       label: "4.2 - Intègration",
-      id: "cours/tableaux1d",
+      id: "cours/integration-module1",
       customProps: {
         avancementLabel: "TP1",
         avancement: 1.0,
@@ -225,7 +225,7 @@ const sidebars = {
     {
       type: "doc",
       label: "5.1 - Formatif 1",
-      id: "cours/integration-for",
+      id: "cours/formatif1",
       customProps: {
         calendrier: {
           "David": [{"1090":"2025-09-22"}, {"1100":"2025-09-22"}],
@@ -242,7 +242,8 @@ const sidebars = {
     {
       type: "doc",
       label: "5.2 - Examen 1",
-      id: "cours/formatif1",
+      id: "cours/examen1",
+      className: "examen",
       customProps: {
         calendrier: {
           "David": [{"1090":"2025-09-25"}, {"1100":"2025-09-25"}],
@@ -258,9 +259,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.1 - Examen 1",
-      id: "cours/examen1",
-      className: "examen",
+      label: "6.1 - Vide",
+      id: "cours/vide",      
       customProps: {
         calendrier: {
           "David": [{"1090":"2025-09-29"}, {"1100":"2025-09-29"}],
@@ -296,10 +296,9 @@ const sidebars = {
     {
       type: "doc",
       label: "7.1 - Intégration des tableaux 2D",
-      id: "cours/integration-2d",
+      id: "cours/parcours2d",
       customProps: {
-        avancementLabel: "TP2",
-        avancement: 0.3,
+       
         calendrier: {
           "David": [{"1090":"2025-10-06"}, {"1100":"2025-10-06"}],
           "Éric": [{"1050":"2025-10-10"}, {"1060":"2025-10-10"}],
