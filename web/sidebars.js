@@ -189,7 +189,7 @@ const sidebars = {
     {
       type: "doc",
       label: "4.1 - Type par énumération",
-      id: "cours/for",
+      id: "cours/tableau1d",
       customProps: {
         calendrier: {
           "David": [{"1090":"2025-09-15"}, {"1100":"2025-09-15"}],
