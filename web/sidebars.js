@@ -79,7 +79,7 @@ const sidebars = {
   docs: [
     {
       type: "doc",
-      label: "1.1 - Introduction 🏁",
+      label: "1.1 - Révision, objets et collection 🏁",
       id: "cours/introduction",
       customProps: {
         calendrier: {
@@ -96,7 +96,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "1.2 - Variables et opérations",
+      label: "1.2 - Git et TP1 (Partie 1)",
       id: "cours/variables",
       customProps: {
         calendrier: {
@@ -114,7 +114,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "2.1 - Structures conditionnelles (if/else)",
+      label: "2.1 - Définition des classes",
       id: "cours/ifelse",
       customProps: {
         calendrier: {
@@ -131,7 +131,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "2.2 - Fonctions",
+      label: "2.2 - Encapsulation",
       id: "cours/fonctions",
       customProps: {
         avancementLabel: "TP1",
@@ -150,7 +150,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.1 - Intégration des fonctions",
+      label: "3.1 - TP2 - Partie 2",
       id: "cours/integration-fonctions",
       customProps: {
         avancementLabel: "TP1",
@@ -169,7 +169,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.2 - TP1 - Créateur de personnage",
+      label: "3.2 - Type valeur vs référence",
       id: "cours/integration-tp1",
       className: "remise-tp1",
       customProps: {
@@ -189,7 +189,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.1 - Boucles for",
+      label: "4.1 - Type par énumération",
       id: "cours/for",
       customProps: {
         calendrier: {
@@ -206,7 +206,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.2 - Tableaux 1D",
+      label: "4.2 - Intègration",
       id: "cours/tableaux1d",
       customProps: {
         calendrier: {
@@ -223,7 +223,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.1 - Intégration des notions",
+      label: "5.1 - Formatif 1",
       id: "cours/integration-for",
       customProps: {
         calendrier: {
@@ -240,7 +240,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.2 - Formatif 1",
+      label: "5.2 - Examen 1",
       id: "cours/formatif1",
       customProps: {
         calendrier: {
