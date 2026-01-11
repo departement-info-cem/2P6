@@ -14,7 +14,7 @@ const g1120 = [
   "2025-09-08", // cours/fonctions
   "2025-09-10", // cours/integration-fonctions
   "2025-09-15", // cours/integration-tp1
-  "2025-09-17", // cours/for
+  "2025-09-17", // cours/vide
   "2025-09-22", // cours/tableaux1d
   "2025-09-24", // cours/integration-for
   "2025-09-29", // cours/formatif1
@@ -47,7 +47,7 @@ const g1080 = [
   "2025-09-04", // cours/fonctions
   "2025-09-08", // cours/integration-fonctions
   "2025-09-11", // cours/integration-tp1
-  "2025-09-15", // cours/for
+  "2025-09-15", // cours/vide
   "2025-09-18", // cours/tableaux1d
   "2025-09-22", // cours/integration-for
   "2025-09-25", // cours/formatif1
