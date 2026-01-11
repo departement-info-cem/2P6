@@ -58,42 +58,24 @@ La matière est expliquée dans chacun des cours, mais tu peux trouver plus d'in
             label: "David",
             icon: "📅",
             component: <MainDocsCalendar professorName="David" />,
-        },
-        {
-            id: "calendar-eric",
-            label: "Éric",
-            icon: "📅",
-            component: <MainDocsCalendar professorName="Éric" />,
-        },
+        },       
         {
             id: "calendar-jamil",
             label: "Jamil",
             icon: "📅",
             component: <MainDocsCalendar professorName="Jamil" />,
-        },
-        {
-            id: "calendar-jean",
-            label: "Jean-Michel",
-            icon: "📅",
-            component: <MainDocsCalendar professorName="Jean-Michel" />,
-        },
+        },       
         {
             id: "calendar-philippe",
             label: "Philippe",
             icon: "📅",
-            component: <MainDocsCalendar professorName="Philippe" />,
+            component: <MainDocsCalendar professorName="Jimmy " />,
         },
         {
             id: "calendar-pierre",
             label: "Pierre-Paul",
             icon: "📅",
-            component: <MainDocsCalendar professorName="Pierre-Paul" />,
-        },
-        {
-            id: "calendar-tommy",
-            label: "Tommy",
-            icon: "📅",
-            component: <MainDocsCalendar professorName="Tommy" />,
+            component: <MainDocsCalendar professorName="Philippe" />,
         },
     ]}
     defaultTabId="grid"
