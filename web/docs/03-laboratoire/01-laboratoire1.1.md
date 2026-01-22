@@ -1,5 +1,5 @@
 ---
-title: Gestion de données avec des collections
+title: Révision - Objet et collection
 ---
 
 # 🧪 Labo 1.1 – Gestion de données avec des collections
@@ -8,7 +8,7 @@ title: Gestion de données avec des collections
 
 ---
 
-## 🟢 Exercice 1 – Analyse d’une liste de notes (10 étudiants)
+## 🟢 Exercice 1 – Gestion d’une liste de notes et calcul de statistiques
 ### 🎯 **Objectifs** 
 * Manipuler une liste simple
 * Définir des fonctions
@@ -161,7 +161,7 @@ Epona;4;DEBUTANT
 ## 🛠️ Instructions
 
 * charger tous les personnages depuis un fichier csv;
-* séparer les personnages selon leur statut;
+* séparer les personnages selon leur niveau;
 * sauvegarder chaque groupe dans un fichier csv différent.
 
 ### 1) Charger la liste depuis le fichier
@@ -172,22 +172,22 @@ Epona;4;DEBUTANT
 * lire toutes les lignes du fichier csv
 * pour chaque ligne valide :
   * extraire `Nom`, `Niveau`, `Statut`
-  * créer un objet `Personnage(nom, niveau, statut)`
+  * créer un objet `Personnage(nom, points, niveau)`
   * l’ajouter à une `List<Personnage>`
 * retourne la liste
 
-### 2) Filtrer une liste par statut 
+### 2) Filtrer une liste par niveau 
 
-Écrire une fonction **FiltrerParStatut** qui doit:
+Écrire une fonction **FiltrerParNiveau** qui doit:
 
-* recevoir en paramètre une liste de personnages et un statut;
-* retourner une nouvelle liste contenant seulement les personnages selon le statut en entrée.
+* recevoir en paramètre une liste de personnages et un niveau;
+* retourner une nouvelle liste contenant seulement les personnages selon le niveau en entrée.
 
 📌 Exemple : filtrer la liste pour obtenir la liste des GUERRIER.
 
 ### 3) Sauvegarder une liste dans un fichier
 
-Écrire une fonction **FiltrerParStatut** qui doit :
+Écrire une fonction **Enregistrer** qui doit :
 
 * recevoir une liste et le nom d'un fichier csv;
 * sauvegarder le contenu de la liste dans ce fichier.

@@ -41,7 +41,7 @@ const g1120 = [
 ];
 
 const g1080 = [
-  "2025-08-25", // cours/introduction
+  "2025-08-25", // cours/revision-collection
   "2025-08-28", // cours/variables
   "2025-08-29", // cours/ifelse
   "2025-09-04", // cours/fonctions
@@ -80,7 +80,7 @@ const sidebars = {
     {
       type: "doc",
       label: "1.1 - Révision, objets et collection 🏁",
-      id: "cours/introduction",      
+      id: "cours/revision-collection",      
       customProps: {       
         calendrier: {
           "David": [{"1090":"2025-08-25"}, {"1100":"2025-08-25"}],
