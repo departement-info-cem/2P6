@@ -262,6 +262,6 @@ foreach (int note in notes)
 
 
 Vous devez réaliser le labo suivant :
- [🧪 Labo 13.1](/laboratoire/laboratoire13.1)
+ [🧪 Labo 1.1](/laboratoire/laboratoire1.1)
 
 ---
