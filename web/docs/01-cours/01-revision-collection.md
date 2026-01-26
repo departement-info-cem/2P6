@@ -105,9 +105,9 @@ decimal soldeMaximal = Compte.SOLDE_MAX;
 // Déclarer une liste
 List<int> notes ; // La variable notes est initialement à null. On ne peut rien insérer dans la liste pour le moment!
 // Instancier une liste 
-notes = List<int>(); //  Un espace mémoire est alloué pour la variable notes. On peut commencer à insérer des éléemnts dans la liste!
+notes = new List<int>(); //  Un espace mémoire est alloué pour la variable notes. On peut commencer à insérer des éléemnts dans la liste!
 // Déclarer et instancier une liste 
-List<int> notes  = List<int>(); // La variable est déclarée et un espace mémoire est allouée.
+List<int> notes  = new List<int>(); // La variable est déclarée et un espace mémoire est allouée.
 // Initialiser une liste 
 List<int> notes  = new List<int>() {10, 15, 58}; // crée la liste en mémoire et ajoute directement ces éléments à la liste au moment de la création
 
@@ -134,11 +134,6 @@ liste.Clear(); // le contenu de la liste est {}.
 
 
 ```
-
-💡 **À retenir :**
-
-* Lorsque'on supprime un élément dans une liste, tous les éléments se trouvant après la valeur supprimée seront décalés à gauche.
-
 
 ### 3. Parcourir une liste
 
@@ -168,6 +163,33 @@ foreach (int note in notes)
 
 
 ---
+
+## ✅ Les listes d'objets `List<T>`
+
+### 1. Définition
+
+* Une liste d’objets est une structure de données qui contient plusieurs instances d’une même classe.
+* La liste permet de stocker, parcourir, trier ou modifier ces objets comme une liste simple.
+* Chaque élément de la liste est manipulé comme un objet.
+
+```csharp
+// Définir une liste de compte
+List<Compte> comptes = new List<Compte>()
+
+// Créer un compte avec un solde initial de 500$
+Compte unCompte = new Compte(500);
+// Ajouter le compte dans la liste
+comptes.add(unCompte);
+
+// Créer un autre compte avec un solde initial de 100$
+Compte unAutreCompte = new Compte(100);
+// Ajouter le compte dans la liste
+comptes.add(unAutreCompte);
+
+// Deposer 50$ dans le premier compte dans la liste
+comptes[0].Deposer(50);
+
+```
 
 ## ✅ Les fichiers CSV
 

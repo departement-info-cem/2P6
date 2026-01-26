@@ -82,6 +82,16 @@ Après : 12 8 4 18 2 6
 
 * Utiliser une classe fournie pour instancier un objet et manipuler son état (lecture et modification des propriétés, appel de méthodes).
 
+### Télécharger le fichier de la classe Personnage
+Disponible ici 👇
+<GithubDownload
+  repo="2P6"
+  folder="code/laboratoires/Laboratoire1-1/Personnage.cs"
+  label="📁 Exercice 3 - Classe Personnage" 
+/>
+
+Vous devez télécharger le fichier Personnage.cs, puis le rajouter à votre projet Visual Studio. N'oubliez pas de changer le nom du namespace au besoin.
+
 📌 **Classe fournie : description des éléments**
 
 La classe `Personnage` est fournie. Elle contient :
