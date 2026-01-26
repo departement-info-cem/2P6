@@ -140,7 +140,7 @@ liste.Clear(); // le contenu de la liste est {}.
 * Lorsque'on supprime un élément dans une liste, tous les éléments se trouvant après la valeur supprimée seront décalés à gauche.
 
 
-### 2. Parcourir une liste
+### 3. Parcourir une liste
 
 #### avec une boucle `for`
 ```csharp
@@ -169,92 +169,121 @@ foreach (int note in notes)
 
 ---
 
-## ✅ Les listes simples `List<T>`
+## ✅ Les fichiers CSV
 
 ### 1. Définition
 
-* Une **liste** est une **collection d’éléments ordonnés**.
-* `List<T>` est une **liste générique** qui peut contenir des éléments d’un **type unique** `T` (int, string, double…).
-* Chaque élément a un **indice** (position) commençant à 0.
 
-#### ⚖️ Différence entre `List<T>` et un tableau (`T[]`)
+Un fichier CSV est un type de fichier texte utilisé pour stocker des données *tabulaires* - **données structurées en rangées et colonnes**. Chaque ligne d’un fichier CSV représente une rangée, et les valeurs à l’intérieur d’une rangée sont séparées par des virgules (`,`).
 
-| Critère             | Tableau (`T[]`)                               | Liste (`List<T>`)                                                        |
-| ------------------- | --------------------------------------------- | ------------------------------------------------------------------------ |
-| Taille              | Fixe après sa création                        | Dynamique : on peut ajouter ou retirer des éléments                      |
-| Redimensionnement   | Impossible (il faut créer un nouveau tableau) | Automatique                                                              |
-| Méthodes intégrées  | Peu de méthodes (Length, Get/Set)             | Beaucoup de méthodes utiles : `Add`, `Remove`, `Contains`, `Clear`, etc. |
-| Syntaxe de création | `int[] nombres = new int[5];`                 | `List<int> nombres = new List<int>();`                                   |
-| Accès aux éléments  | Par indice : `nombres[0]`                     | Par indice : `nombres[0]` et méthodes comme `Add`, `Remove`              |
+Le format CSV est largement utilisé pour l’import et l’export de données entre différentes applications logicielles. Les fichiers CSV peuvent être ouverts et modifiés aussi bien avec *Excel* qu’à l’aide d’un simple éditeur de texte, ce qui les rend accessibles à tous.
 
-### 2. Manipuler une liste
-
-```csharp
-
-// Déclarer une liste
-List<int> notes ; // La variable notes est initialement à null. On ne peut rien insérer dans la liste pour le moment!
-// Instancier une liste 
-notes = List<int>(); //  Un espace mémoire est alloué pour la variable notes. On peut commencer à insérer des éléemnts dans la liste!
-// Déclarer et instancier une liste 
-List<int> notes  = List<int>(); // La variable est déclarée et un espace mémoire est allouée.
-// Initialiser une liste 
-List<int> notes  = new List<int>() {10, 15, 58}; // crée la liste en mémoire et ajoute directement ces éléments à la liste au moment de la création
-
-// Obtenir la taille d'une liste
-int taille = liste.Count;
-// Accéder à un élément dans la liste
-int uneNote = liste[2];
-//ou
-int nombre = liste.ElementAt(2);
-// Modifier le contenu d'un élément
-liste[1] = -5;
-
-// Vérifier si une valeur est dans la liste
-bool estPresent = liste.Contains(15)); // estPresent contient true puisque 15 est dans la liste.
-
-// Ajouter un élément à la fin de la liste
-liste.Add(20); // le contenu de la liste est {10, -5, 58, 20}
-// Supprimer un élément à ujhe position spécifiée
-liste.RemoveAt(20); // le contenu de la liste est {10, -5, 58}
-// Supprimer le premier élément contenant la valeur spécifiée
-liste.Remove(-5); // le contenu de la liste est {10, 58}. Tous les éléments après la valeur supprimée sont décalés à gauche.
-// Vider une liste
-liste.Clear(); // le contenu de la liste est {}.
-
-
+Exemple de contenu d'un fichier `etudiants.csv` :
+```
+Nom,Prenom,Note
+Bond,James,100
+Potter,Harry,87
+Jones,Indiana,59
+Snow,Jon,81
 ```
 
-💡 **À retenir :**
+⚠️ Ici :
+- la **première ligne** contient les **en-têtes de colonnes** ;
+- les **lignes suivantes** contiennent les **valeurs** de chaque enregistrement.
 
-* Lorsque'on supprime un élément dans une liste, tous les éléments se trouvant après la valeur supprimée seront décalés à gauche.
+---
 
+### 2. ✍️ Écrire un fichier CSV avec `StreamWriter`
 
-### 2. Parcourir une liste
+La méthode est identique à celle utilisée pour un fichier texte ordinaire, sauf qu’on sépare les valeurs par **`,`**.
 
-#### avec une boucle `for`
 ```csharp
-// Afficher le contenu de la liste
- for (int index = 0; index < notes.Count; index++)
- {
-     Console.WriteLine(notes[index]);
- }
-```
-#### avec une boucle `foreach`
-```csharp
-// Afficher le contenu de la liste
-foreach (int note in notes)
+using System.IO;
+
+class Program
 {
-    Console.WriteLine(note);
+    static void Main()
+    {
+        using (StreamWriter writer = new StreamWriter("C:/EspaceLabo/etudiants.csv"))
+        {
+            writer.WriteLine("Nom,Prenom,Note"); // En-têtes
+            writer.WriteLine("Bond,James,100");
+            writer.WriteLine("Potter,Harry,87");
+            writer.WriteLine("Jones,Indiana,59");
+            writer.WriteLine("Snow,Jon,81");
+        }
+
+        Console.WriteLine("Fichier CSV créé avec succès !");
+    }
 }
 ```
 
-💡 **À retenir :**
+🧾 **Résultat dans `etudiants.csv` :**
+```
+Nom,Prenom,Note
+Bond,James,100
+Potter,Harry,87
+Jones,Indiana,59
+Snow,Jon,81
+```
 
-* avec `foreach`, impossible de modifier les éléments directement
-* `for` est utile si on a besoin **de l’indice** ou pour **modifier des éléments**.
-* `foreach` est pratique pour **lire tous les éléments** facilement et éviter les erreurs d’indice.
+---
 
+### 3. 📖 Lire un fichier CSV avec `StreamReader`
 
+Pour lire un CSV, on lit **chaque ligne** du fichier, puis on **sépare les valeurs** à l’aide de la méthode `.Split(',')`.
+
+```csharp
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string path = "C:/EspaceLabo/etudiants.csv";
+
+        // On vérifie si le fichier existe !
+        if (!File.Exists(path)) 
+        {
+            Console.WriteLine("Fichier introuvable !");
+            return;
+        }
+
+        // Ouvrir le fichier : 'using()' s'assure de fermer le fichier une fois la lecture terminée
+        using (StreamReader reader = new StreamReader(path))
+        {
+            string ligne;
+
+            // Lire l’en-tête (première ligne)
+            string entete = reader.ReadLine();
+            Console.WriteLine($"En-têtes : {entete}");
+
+            // Lire le reste du fichier
+            while (!reader.EndOfStream)
+            {
+                // Lire une ligne complète du fichier CSV
+                ligne = reader.ReadLine();
+                
+                // Séparer la ligne en plusieurs éléments, en utilisant la virgule comme séparateur
+                string[] valeurs = ligne.Split(','); 
+
+                Console.WriteLine($"{valeurs[1]} {valeurs[0]} à {valeurs[2]}%");
+            }
+        }
+    }
+}
+```
+
+✅ **Sortie console :**
+```
+En-têtes : Nom,Prenom,Note
+James Bond à 100%
+Harry Potter à 87%
+Indiana Jones à 59%
+Jon Snow à 81%
+```
+
+---
 
 ## 📚 Ressources supplémentaires
 
