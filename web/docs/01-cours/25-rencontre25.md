@@ -1,7 +1,7 @@
 ---
-description: TP3 (20%)
+description: TP3 (25%)
 ---
-# TP3 (20%)
+# TP3 (25%)
 
 
 <Row>

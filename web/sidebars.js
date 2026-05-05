@@ -529,7 +529,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.2 - rencontre26",
+      label: "13.2 - Tests unitaires",
       id: "cours/rencontre26",
       customProps: {
         calendrier: {
@@ -543,7 +543,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.1 - rencontre27",
+      label: "14.1 - Test unitaire (suite)",
       id: "cours/rencontre27",
       customProps: {
         calendrier: {
@@ -557,12 +557,9 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.2 - Intégration",
+      label: "14.2 - Intégration et TP3",
       id: "cours/integration-module3",
-      className: "remise-tp3",
-      customProps: {
-        avancementLabel: "TP3",
-        avancement: 1.0,
+      customProps: {       
         calendrier: {
           "Jamil": [{ "1010": g1010[27] }, { "1020": g1010[27] }],
           "Philippe": [{ "1050": g1050[27] }],
@@ -575,8 +572,11 @@ const sidebars = {
     {
       type: "doc",
       label: "15.1 - Examen formatif 3",
+      className: "remise-tp3",
       id: "cours/formatif3",
       customProps: {
+        avancementLabel: "TP3",
+        avancement: 1.0,
         calendrier: {
           "Jamil": [{ "1010": g1010[28] }, { "1020": g1010[28] }],
           "Philippe": [{ "1050": g1050[28] }],
