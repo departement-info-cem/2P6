@@ -515,7 +515,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.1 - rencontre25",
+      label: "13.1 - TP3",
       id: "cours/rencontre25",
       customProps: {
         calendrier: {
