@@ -530,7 +530,7 @@ const sidebars = {
     {
       type: "doc",
       label: "13.2 - Tests unitaires",
-      id: "cours/rencontre26",
+      id: "cours/tests-unitaires",
       customProps: {
         calendrier: {
           "Jamil": [{ "1010": g1010[25] }, { "1020": g1010[25] }],
@@ -544,7 +544,7 @@ const sidebars = {
     {
       type: "doc",
       label: "14.1 - Test unitaire (suite)",
-      id: "cours/rencontre27",
+      id: "cours/tests-unitaires-suite",
       customProps: {
         calendrier: {
           "Jamil": [{ "1010": g1010[26] }, { "1020": g1010[26] }],
