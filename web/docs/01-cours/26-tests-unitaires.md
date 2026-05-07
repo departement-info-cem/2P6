@@ -5,17 +5,51 @@ description: Tests unitaires
 # Tests unitaires
 ---
 
+### Télécharger la démonstration à compléter
+
+Disponible ici 👉 [Demonstration13_2](../../static/files/demonstrations/Demo_13.2_A_COMPLETER.zip)
+
+---
 ## 🎯 Objectifs
 
 À la fin de cette séance, vous serez en mesure de :
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
+- comprendre l’utilité des tests unitaires ;
+- générer un projet de tests unitaires ;
+- définir des classes et des méthodes de tests ;
+- utiliser les principales méthodes d’assertion ;
+- exécuter des tests unitaires ;
+- interpréter les résultats des tests ;
+- détecter des erreurs dans un programme ;
+- corriger un programme à l’aide des tests unitaires.
+
 ---
+
+## Mise en situation
+
+Dans ce cours, nous allons utiliser la classe `Thermostat` afin d’apprendre à écrire des tests unitaires.
+
+La classe fournie n’est volontairement pas complète. Certaines parties du code devront être complétées ou corrigées.
+
+L’objectif est donc de :
+
+- écrire des tests unitaires ;
+- exécuter les tests ;
+- identifier les erreurs ;
+- corriger la classe `Thermostat` ;
+- vérifier que les tests réussissent correctement.
+
+Cette approche s’inspire du développement dirigé par les tests (*Test-Driven Development* ou **TDD**), dans lequel les tests servent à détecter les problèmes et à guider le développement du programme.
+
+:::info
+Nous allons voir ensemble :
+
+- comment générer un projet de tests ;
+- comment définir des classes et des méthodes de tests ;
+- comment exécuter les tests ;
+- comment détecter et corriger des erreurs dans le programme.
+:::
+
 ## Test unitaire 
 ### Définition
 
@@ -34,7 +68,7 @@ description: Tests unitaires
 
 ## Qu’est-ce qu’on teste exactement dans un programme ?
 
-- Quand on fait un test unitaire, on essaie simplement de vérifier que notre programme fonctionne correctement dans plusieurs situations.
+Quand on fait un test unitaire, on essaie simplement de vérifier que notre programme fonctionne correctement dans plusieurs situations.
 - L’objectif est de répondre à des questions comme :
     - Est-ce que la méthode retourne le bon résultat ?
     - Est-ce que les données sont bien modifiées ?
@@ -66,11 +100,11 @@ Certaines méthodes modifient les données d’un objet.
 
 **Exemple**
 
-```csharp id="h1mdqf"
+```csharp
 thermostat.AugmenterTemperature();
 ```
 
-Après l’appel de la méthode, on veut vérifier que la température a augmenté.
+Après l’appel de la méthode, on veut vérifier que la température a augmenté de 1.
 
 ---
 
@@ -80,8 +114,9 @@ On doit vérifier ce qui arrive avec des valeurs minimales ou maximales.
 
 **Exemple**
 
-```csharp id="d7y80u"
+```csharp
 Thermostat thermostat = new Thermostat(35);
+thermostat.AugmenterTemperature();
 ```
 
 Si `35` est la température maximale permise, on peut tester ce qui arrive si on essaie encore d’augmenter la température.
@@ -94,7 +129,7 @@ On vérifie que le programme refuse les mauvaises données.
 
 **Exemple**
 
-```csharp id="ijmcl8"
+```csharp
 CompteBancaire compte = new CompteBancaire(-100);
 ```
 
@@ -493,3 +528,4 @@ public class ClasseDeTest
 
 - `Assert`  
   Vérifier que le résultat obtenu correspond au résultat attendu.
+

@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D73984C-1EA8-412D-ABC9-B36DC43934DC}|Models\\Models.csproj|c:\\2p6-prof\\demonstration_solution\\demo_13.2\\demo_13.2_a_completer\\models\\thermostat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D73984C-1EA8-412D-ABC9-B36DC43934DC}|Models\\Models.csproj|solutionrelative:models\\thermostat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BDE2DA-BE52-47FF-A615-7DC3928458E4}|TestsUnitairesDemo\\TestsUnitairesDemo.csproj|C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\testsunitairesdemo\\thermostat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BDE2DA-BE52-47FF-A615-7DC3928458E4}|TestsUnitairesDemo\\TestsUnitairesDemo.csproj|solutionrelative:testsunitairesdemo\\thermostat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48BDE2DA-BE52-47FF-A615-7DC3928458E4}|TestsUnitairesDemo\\TestsUnitairesDemo.csproj|C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\testsunitairesdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48BDE2DA-BE52-47FF-A615-7DC3928458E4}|TestsUnitairesDemo\\TestsUnitairesDemo.csproj|solutionrelative:testsunitairesdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Thermostat.cs",
+              "DocumentMoniker": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\Models\\Thermostat.cs",
+              "RelativeDocumentMoniker": "Models\\Thermostat.cs",
+              "ToolTip": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\Models\\Thermostat.cs",
+              "RelativeToolTip": "Models\\Thermostat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T15:51:40.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Thermostat.cs",
+              "DocumentMoniker": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\TestsUnitairesDemo\\Thermostat.cs",
+              "RelativeDocumentMoniker": "TestsUnitairesDemo\\Thermostat.cs",
+              "ToolTip": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\TestsUnitairesDemo\\Thermostat.cs",
+              "RelativeToolTip": "TestsUnitairesDemo\\Thermostat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T15:51:29.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\TestsUnitairesDemo\\Program.cs",
+              "RelativeDocumentMoniker": "TestsUnitairesDemo\\Program.cs",
+              "ToolTip": "C:\\2P6-Prof\\Demonstration_solution\\Demo_13.2\\Demo_13.2_A_COMPLETER\\TestsUnitairesDemo\\Program.cs",
+              "RelativeToolTip": "TestsUnitairesDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T15:50:36.127Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
