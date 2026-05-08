@@ -25,6 +25,32 @@ Disponible ici 👉 [Demonstration13_2](../../static/files/demonstrations/Demo_1
 
 ---
 
+## 💥 Exemples réels de catastrophes causées par des bugs informatiques
+
+| Catastrophe réelle          | Bug ou erreur informatique                                  | Dégâts causés                                                                                                      |
+| --------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| [Boeing 737 MAX Crashes](https://fr.wikipedia.org/wiki/Suspension_de_vol_du_Boeing_737_Max)     | Problème logiciel du système MCAS                           | Deux accidents d’avion et **346 décès**. Immobilisation mondiale des avions pendant plusieurs mois.                |
+| [Accident du Therac-25](https://fr.wikipedia.org/wiki/Therac-25)       | Bug logiciel dans une machine de radiothérapie              | Plusieurs patients ont reçu des doses massives de radiation. Blessures graves et décès.                            |
+| [Explosion du vol Ariane 501](https://fr.wikipedia.org/wiki/Vol_501_d%27Ariane_5) | Conversion d’un nombre invalide dans le logiciel de guidage | Explosion de la fusée environ 40 secondes après le décollage. Perte d’environ **370 millions $**.                  |
+| [Mars Climate Orbiter](https://fr.wikipedia.org/wiki/Mars_Climate_Orbiter#Perte_de_la_sonde_(23_septembre_1999))        | Confusion entre unités métriques et impériales              | Destruction de la sonde spatiale lors de son approche de Mars. Perte d’environ **125 millions $**.                 |
+
+:::danger
+## Leçons à retenir
+> “The earlier a defect is found, the cheaper it is to fix.”
+> — Barry Boehm
+>
+> « Plus une erreur est détectée tôt, moins elle coûte cher à corriger. »
+
+> “Test early, test often, test everything.“
+> — Bjarne Stroustrup
+
+> « Testez tôt, testez souvent, testez tout. »
+
+:::
+
+---
+
+
 ## Mise en situation
 
 Dans ce cours, nous allons utiliser la classe `Thermostat` afin d’apprendre à écrire des tests unitaires.
