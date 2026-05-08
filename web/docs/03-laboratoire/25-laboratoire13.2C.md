@@ -8,12 +8,6 @@ title: Tests unitaires - Stats
 
 ## Exercice 3 – Écrire des tests unitaires pour compléter la classe `Statistiques`
 
-### 🎯 Objectif
-
-Appliquer une approche de **développement dirigé par les tests (DDT / TDD)** afin de compléter progressivement la classe `Statistiques`.
-
----
-
 ### 🛠️ Instructions
 
 La classe `Statistiques` permet de travailler avec une collection de nombres entiers.

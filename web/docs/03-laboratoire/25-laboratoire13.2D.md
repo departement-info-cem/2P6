@@ -7,12 +7,6 @@ title: Tests unitaires - RefugeChats
 
 ## Exercice 4 – Écrire des tests unitaires pour compléter la classe `RefugeChats`
 
-### 🎯 Objectif
-
-Appliquer une approche de **développement dirigé par les tests (DDT / TDD)** afin de compléter progressivement la classe `RefugeChats`.
-
----
-
 ### 🛠️ Instructions
 
 La classe `RefugeChats` représente une collection de chats.

@@ -7,9 +7,6 @@ title: Tests unitaires - Montre
 
 ## Exercice 2 – Écrire des tests unitaires pour compléter la classe ``Montre``
 
-### 🎯 Objectif 
-
-
 ### 🛠️ Instructions
 
 La classe `Montre` représente une montre numérique affichant l’heure au format :

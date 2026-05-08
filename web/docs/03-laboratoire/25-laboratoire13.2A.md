@@ -5,14 +5,21 @@ title: Tests unitaires - Chat
 
 ---
 
+### 🎯 Objectif
+
+- générer un projet de tests unitaires ;
+- définir des classes et des méthodes de tests ;
+- utiliser les principales méthodes d’assertion ;
+- exécuter des tests unitaires ;
+- interpréter les résultats des tests ;
+- détecter des erreurs dans un programme ;
+- corriger un programme à l’aide des tests unitaires.
 
 Le projet du laboratoire 13.2 est disponible ici 👉 [Laboratoire13_2](../../static/files/laboratoires/Laboratoire13_2.zip)
 
 ## Exercice 1 – Écrire des tests unitaires pour compléter la classe `Chat`
 
-### 🎯 Objectif
 
-Appliquer une approche de **développement dirigé par les tests (DDT / TDD)** afin de compléter progressivement la classe `Chat`.
 
 ---
 
