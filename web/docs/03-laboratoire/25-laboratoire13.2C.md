@@ -2,7 +2,7 @@
 title: Tests unitaires - Stats
 ---
 
-# 🧪 Labo 13.1C – Pratique de tests unitaires
+# 🧪 Labo 13.2C – Pratique de tests unitaires
 
 ---
 

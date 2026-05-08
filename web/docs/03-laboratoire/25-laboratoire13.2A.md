@@ -1,14 +1,14 @@
 ---
 title: Tests unitaires - Chat
 ---
-# 🧪 Labo 13.1A – Pratique de tests unitaires
+# 🧪 Labo 13.2A – Pratique de tests unitaires
 
 ---
 
+
+Le projet du laboratoire 13.2 est disponible ici 👉 [Laboratoire13_2](../../static/files/laboratoires/Laboratoire13_2.zip)
+
 ## Exercice 1 – Écrire des tests unitaires pour compléter la classe `Chat`
-
-
-
 
 ### 🎯 Objectif
 
@@ -20,6 +20,7 @@ Appliquer une approche de **développement dirigé par les tests (DDT / TDD)** a
 
 La classe `Chat` représente un chat avec :
 
+- un matricule ;
 - un nom ;
 - un âge.
 
@@ -46,8 +47,9 @@ Pour chaque fonctionnalité de la classe `Chat`, vous devez :
 
 ### Description fonctionnelle
 
-La classe `Chat` permet de représenter un chat à l’aide de deux informations :
+La classe `Chat` permet de représenter un chat à l’aide de trois informations :
 
+- `Matricule` : le matricule du chat ;
 - `Nom` : le nom du chat ;
 - `Age` : l’âge du chat en années.
 
@@ -55,20 +57,58 @@ La classe `Chat` permet de représenter un chat à l’aide de deux informations
 
 ### Constructeur avec paramètres
 
-Le constructeur doit permettre d’initialiser un chat avec un nom et un âge.
+Le constructeur doit permettre d’initialiser un chat avec un matricule, un nom et un âge.
 
 #### Exemple
 
 ```csharp
-Chat chat = new Chat("Minou", 3);
-```
+Chat chat = new Chat("A123", "Minou", 3);
+````
 
 #### Comportement attendu
 
 Après la création de cette instance :
 
-- `Nom` doit valoir `"Minou"` ;
-- `Age` doit valoir `3`.
+* `Matricule` doit valoir `"A123"` ;
+* `Nom` doit valoir `"Minou"` ;
+* `Age` doit valoir `3`.
+
+---
+
+### Propriété `Matricule`
+
+La propriété `Matricule` permet d’obtenir ou de modifier le matricule du chat.
+
+#### Domaine de validité
+
+Le matricule :
+
+* ne doit pas être `null` ;
+* doit contenir exactement `4` caractères.
+
+#### Validations requises
+
+Une exception de type `ArgumentNullException` doit être levée si le matricule est `null`.
+
+Une exception de type `ArgumentException` doit être levée si le matricule ne contient pas exactement `4` caractères.
+
+#### Exemples de valeurs invalides
+
+```csharp
+null
+```
+
+```csharp
+""
+```
+
+```csharp
+"A1"
+```
+
+```csharp
+"ABCDE"
+```
 
 ---
 
@@ -80,8 +120,8 @@ La propriété `Nom` permet d’obtenir ou de modifier le nom du chat.
 
 Le nom du chat :
 
-- ne doit pas être `null` ;
-- doit contenir au moins `3` caractères après avoir retiré les espaces au début et à la fin.
+* ne doit pas être `null` ;
+* doit contenir au moins `3` caractères après avoir retiré les espaces au début et à la fin.
 
 #### Validations requises
 
@@ -135,13 +175,20 @@ Une exception de type `ArgumentException` doit être levée si l’âge est plus
 
 Créer une classe de tests unitaires permettant de valider :
 
-- la création d’un chat avec des valeurs valides ;
-- la propriété `Nom` avec une valeur valide ;
-- la propriété `Nom` avec une valeur `null` ;
-- la propriété `Nom` avec une chaîne vide ;
-- la propriété `Nom` avec une chaîne contenant seulement des espaces ;
-- la propriété `Nom` avec moins de `3` caractères ;
-- la propriété `Age` avec une valeur valide ;
-- la propriété `Age` avec une valeur négative.
+* la création d’un chat avec des valeurs valides ;
+* la propriété `Matricule` avec une valeur valide ;
+* la propriété `Matricule` avec une valeur `null` ;
+* la propriété `Matricule` avec moins de `4` caractères ;
+* la propriété `Matricule` avec plus de `4` caractères ;
+* la propriété `Nom` avec une valeur valide ;
+* la propriété `Nom` avec une valeur `null` ;
+* la propriété `Nom` avec une chaîne vide ;
+* la propriété `Nom` avec une chaîne contenant seulement des espaces ;
+* la propriété `Nom` avec moins de `3` caractères ;
+* la propriété `Age` avec une valeur valide ;
+* la propriété `Age` avec une valeur négative.
 
 ---
+
+
+

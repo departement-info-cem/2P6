@@ -747,10 +747,10 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Laboratoire 13.1',
+      label: 'Laboratoire 13.2',
       collapsible: true,
-      collapsed: collapseBloc3,
-      items: ['laboratoire/laboratoire13.1A','laboratoire/laboratoire13.1B','laboratoire/laboratoire13.1C']
+      collapsed: true,
+      items: ['laboratoire/laboratoire13.2A','laboratoire/laboratoire13.2B','laboratoire/laboratoire13.2C','laboratoire/laboratoire13.2D']
     }
 
 
